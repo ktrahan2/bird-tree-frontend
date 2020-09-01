@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird App!</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <h1>Bird App!</h1>
+
+    <form method="POST" action="http://localhost:3000/birds">
+        <label for="name-field">Name</label>
+        <input id="name" name="name" type="text">
+
+        <label for="species-field">Species</label>
+        <input id="species" name="species" type="text">
+
+        <select id="tree-field" name="tree_id">
+            
+        </select>
+        
+        <input type="submit" value="Bird is the word">
+    </form>
+
+    <section id="bird-section">
+    </section>
+</body>
+</html>
