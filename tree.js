@@ -8,12 +8,20 @@ fetch(`http://localhost:3000/trees/${treeId}`)
 
         const treeName = document.createElement('h2')
         treeName.textContent = tree.name
+        
+        treeCard.append(treeName)
 
-        const birdCard = document.createElement('a')
+        const birdList = document.createElement('ul')
+        birdList.classList.add('bird-list')
+        treeCard.append(birdList)
+        
+        
         tree.birds.forEach(bird => {
+            let birdCard = document.createElement('a')
+            birdCard.classList.add('bird-link')
             birdCard.textContent = bird.species
             birdCard.href = `bird.html?bird_id=${bird.id}`
+            birdList.append(birdCard)
         })
         
-        treeCard.append(treeName, birdCard)
     })

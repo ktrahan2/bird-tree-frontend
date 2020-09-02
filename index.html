@@ -7,14 +7,14 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <h1>Bird App!</h1>
+    <h1>Bird App</h1>
 
     <form method="POST" action="http://localhost:3000/birds">
-        <label for="name-field">Name</label>
-        <input id="name" name="name" type="text">
+        <h2>Bird Creation!</h2>
+        <input id="name" name="name" type="text" placeholder="name">
 
-        <label for="species-field">Species</label>
-        <input id="species" name="species" type="text">
+        
+        <input id="species" name="species" type="text" placeholder="species">
 
         <select id="tree-field" name="tree_id">
             
@@ -22,6 +22,11 @@
         
         <input type="submit" value="Bird is the word">
     </form>
+
+   
+
+
+  
 
     <section id="bird-section">
     </section>
